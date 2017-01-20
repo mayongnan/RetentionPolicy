@@ -1,0 +1,1 @@
+include ':app', ':source', ':clazz', ':runtime', ':clazz_processor', ':clazz_annotation'

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RetentionPolicy</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密  码</string>
+    <string name="sign_in">登  录</string>
+    <string name="finish">完  成</string>
+    <string name="success">登录成功</string>
+    <string name="exception">用户信息验证失败</string>
+    <string name="loading">正在进行登录&#8230;</string>
+
+    <string name="user_name_text">用户名：%1$s</string>
+    <string name="password_text">密  码：%1$s</string>
+</resources>

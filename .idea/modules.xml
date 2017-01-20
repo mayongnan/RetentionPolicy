@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RetentionPolicy.iml" filepath="$PROJECT_DIR$/RetentionPolicy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clazz/clazz.iml" filepath="$PROJECT_DIR$/clazz/clazz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clazz_annotation/clazz_annotation.iml" filepath="$PROJECT_DIR$/clazz_annotation/clazz_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clazz_processor/clazz_processor.iml" filepath="$PROJECT_DIR$/clazz_processor/clazz_processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtime/runtime.iml" filepath="$PROJECT_DIR$/runtime/runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/source/source.iml" filepath="$PROJECT_DIR$/source/source.iml" />
+    </modules>
+  </component>
+</project>

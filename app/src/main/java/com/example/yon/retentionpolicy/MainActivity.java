@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 
 import com.dd.CircularProgressButton;
-import com.example.rententionpolicy.source.SignInProgress;
-import com.example.rententionpolicy.source.SignInState;
+import com.example.retentionpolicy.source.SignInProgress;
+import com.example.retentionpolicy.source.SignInState;
 import com.example.retentionpolicy.runtime.FindViewById;
 import com.example.retentionpolicy.runtime.SetOnClickById;
 import com.example.retentionpolicy.runtime.ViewInjector;

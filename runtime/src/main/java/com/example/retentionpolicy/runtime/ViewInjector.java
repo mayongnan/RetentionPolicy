@@ -43,6 +43,7 @@ public class ViewInjector {
                     @Override
                     public void onClick(View v) {
                         try {
+                            method.setAccessible(true);
                             method.invoke(target);
                         } catch (Exception e) {
                             throw new RuntimeException("can't set click listener by id :" + annotation.value());

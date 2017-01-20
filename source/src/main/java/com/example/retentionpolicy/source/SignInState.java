@@ -1,4 +1,4 @@
-package com.example.rententionpolicy.source;
+package com.example.retentionpolicy.source;
 
 import android.support.annotation.IntDef;
 

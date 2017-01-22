@@ -61,14 +61,21 @@ public class MainActivity extends AppCompatActivity {
     void updateSignInState(@SignInState int state) {
         switch (state) {
             case SignInProgress.START:
+                mUserNameText.setEnabled(false);
+                mPasswordText.setEnabled(false);
+                mSubmitBtn.setClickable(false);
                 //因为submitBtn.setIndeterminateProgressMode(true);，因此这里随便给个进度值（0~100）即可让进度条转动
                 mSubmitBtn.setProgress(1);
                 break;
             case SignInProgress.SUCCESS:
                 mSubmitBtn.setProgress(100);
-                mSubmitBtn.setEnabled(true);
-                ReceiverActivity.start(this, mUserNameText.getText().toString(), mPasswordText.getText().toString());
-                finish();
+                mSubmitBtn.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ReceiverActivity.start(MainActivity.this, mUserNameText.getText().toString(), mPasswordText.getText().toString());
+                        finish();
+                    }
+                },500);
                 break;
             case SignInProgress.FAILURE:
                 break;

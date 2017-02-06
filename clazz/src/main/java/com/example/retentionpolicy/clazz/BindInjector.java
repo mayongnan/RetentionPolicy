@@ -22,6 +22,9 @@ public class BindInjector {
     private static final Map<Class<?>, Method> INJECT_UTILS = new LinkedHashMap<Class<?>, Method>();
     private static final Method NO_OP = null;
 
+    /**
+     * 为xxActivity找到并调用xxActivity_InjectUtil工具类的inject方法进行注入
+     */
     public static void inject(Activity activity) {
         Class<?> targetClass = activity.getClass();
         try {
@@ -37,6 +40,9 @@ public class BindInjector {
         }
     }
 
+    /**
+     * 查找cls对应的工具类方法并进行缓存
+     */
     private static Method findInjectUtilMethodForClass(Class<?> cls) throws NoSuchMethodException {
         Method inject = INJECT_UTILS.get(cls);
         if (inject != null) {
